@@ -1,0 +1,21 @@
+<h1>Games#new</h1>
+
+<ul id="inline">
+  <%= @letters.each do |i| %>
+   <li class="list-inline"><%= i %></li>
+  <% end %>
+</ul>
+
+
+
+<div>
+  <form action="/score">
+    <input id="input" type="text" name="question">
+    <input id ="decider" type="submit" value="Ask!">
+  </form>
+</div>
+
+
+
+
+
